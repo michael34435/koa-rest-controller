@@ -3,3 +3,10 @@ node_js:
   - "8"
   - "9"
   - "10"
+
+deploy:
+  provider: npm
+  email: $NPM_DEPLOY_EMAIL
+  api_key: $NPM_DEPLOY_KEY
+  on:
+    tags: true
