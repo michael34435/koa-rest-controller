@@ -15,10 +15,10 @@ Basically, you can assign an object to get koa-router routes
 const rest = require('koa-rest-controller')
 
 const controller = {
-  index (req, res) {
+  index (ctx) {
 
   },
-  store (req, res) {
+  store (ctx) {
 
   },
   // ...
