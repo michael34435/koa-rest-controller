@@ -1,7 +1,10 @@
-koa-rest-controller
+koa-rest-controller ![build](https://api.travis-ci.org/michael34435/koa-rest-controller.svg?branch=master)
 ---
 
 `koa-rest-controller` is a super simple tool to build `Koa.js` controller like `Laravel` controller
+
+## Requirement
+* node.js >= 8
 
 ## Install
 ```bash
