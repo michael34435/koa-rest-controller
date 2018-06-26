@@ -1,11 +1,11 @@
 const assert = require('assert')
 const rest = require('..')
-const index = (req, res) => {}
-const store = (req, res) => {}
-const edit = (req, res) => {}
-const update = (req, res) => {}
-const create = (req, res) => {}
-const destroy = (req, res) => {}
+const index = (ctx) => {}
+const store = (ctx) => {}
+const edit = (ctx) => {}
+const update = (ctx) => {}
+const create = (ctx) => {}
+const destroy = (ctx) => {}
 
 describe('Test controller builder', () => {
   it('Test builder with string resource and single controller', () => {
