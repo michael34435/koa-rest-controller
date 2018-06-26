@@ -27,7 +27,7 @@ const controller = {
   // ...
 }
 
-controller({
+rest({
   resource: 'foo',
   controller
 })
@@ -35,7 +35,7 @@ controller({
 
 Or, you can assign nested resource like this
 ```js
-controller({
+rest({
   resource: ['foo', 'bar'],
   controller
 })
