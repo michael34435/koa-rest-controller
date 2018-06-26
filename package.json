@@ -1,0 +1,20 @@
+{
+  "name": "koa-rest-controller",
+  "version": "1.0.0",
+  "description": "Koa RESTful controller builder",
+  "main": "index.js",
+  "repository": "https://github.com/michael34435/koa-rest-controller.git",
+  "author": "Michael.K <michael34435@capslock.tw>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "standard": "^11.0.1"
+  }
+}
