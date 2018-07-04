@@ -27,31 +27,31 @@ module.exports = ({ resource, controller } = {}) => {
   const router = new Router()
 
   if (resourceController.show) {
-    router.get(`/${prefix}/:id`, resourceController.show)
+    router.get(`/${prefix}/:id`.replace(/\/{1,}/, '/'), resourceController.show)
   }
 
   if (resourceController.index) {
-    router.get(`/${prefix}`, resourceController.index)
+    router.get(`/${prefix}`.replace(/\/{1,}/, '/'), resourceController.index)
   }
 
   if (resourceController.update) {
-    router.put(`/${prefix}/:id`, resourceController.update)
+    router.put(`/${prefix}/:id`.replace(/\/{1,}/, '/'), resourceController.update)
   }
 
   if (resourceController.edit) {
-    router.get(`/${prefix}/:id/edit`, resourceController.edit)
+    router.get(`/${prefix}/:id/edit`.replace(/\/{1,}/, '/'), resourceController.edit)
   }
 
   if (resourceController.create) {
-    router.get(`/${prefix}/create`, resourceController.create)
+    router.get(`/${prefix}/create`.replace(/\/{1,}/, '/'), resourceController.create)
   }
 
   if (resourceController.destroy) {
-    router.delete(`/${prefix}/:id`, resourceController.destroy)
+    router.delete(`/${prefix}/:id`.replace(/\/{1,}/, '/'), resourceController.destroy)
   }
 
   if (resourceController.store) {
-    router.post(`/${prefix}`, resourceController.store)
+    router.post(`/${prefix}`.replace(/\/{1,}/, '/'), resourceController.store)
   }
 
   return router.routes()
