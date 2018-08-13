@@ -27,18 +27,30 @@ const controller = {
   // ...
 }
 
-rest({
-  resource: 'foo',
-  controller
-})
+rest(
+  {
+    resource: 'foo',
+    controller
+  }
+)
 ```
 
 Or, you can assign nested resource like this
 ```js
-rest({
-  resource: ['foo', 'bar'],
-  controller
-})
+rest(
+  {
+    resource: ['foo', 'bar'],
+    controller
+  }
+)
 ```
 
-The path is look like `/foo/:fooId/bar/:id`
+The path looks like this `/foo/:fooId/bar/:id`
+
+|key|description|type|
+|---|---|---|
+|resource|Route resources, it should be an array or a string.|string or array |
+|controller|An object to define CRUD like Laravel project.|object|
+|routeMiddleware|An object to define CRUD middleware like Laravel project.|object|
+|prefix|Add prefix to all routes|string|
+|middleware|Add koa middleware to all routes|function||
