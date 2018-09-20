@@ -1,6 +1,6 @@
 {
   "name": "koa-rest-controller",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Koa RESTful controller builder",
   "main": "index.js",
   "repository": "https://github.com/michael34435/koa-rest-controller.git",
